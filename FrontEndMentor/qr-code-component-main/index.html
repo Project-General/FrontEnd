@@ -37,6 +37,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -68,10 +69,11 @@ table {
       background-color: hsl(212, 45%, 89%);
       font-family: 'Outfit', sans-serif;
       display: flex;
+      justify-content: center;
     }
     
     .background {
-      width: 1440px;
+      /* width: 1440px; */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -79,7 +81,7 @@ table {
     }
 
     .card {
-      width: 250px;
+      width: 300px;
       display: flex;
       flex-direction: column;
       padding: 15px 15px 35px 15px;
@@ -92,8 +94,12 @@ table {
       border-radius: 10px;
     }
 
+    .card_content_wrapper {
+      padding: 0 20px
+    }
+
     .card_heading {
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 700;
       line-height: 1.2;
       margin: 25px 0;
@@ -106,6 +112,25 @@ table {
       text-align: center;
       color:  hsl(220, 15%, 55%);
     }
+
+    /* CSS styles for mobile devices with a width of 375px or less */
+    @media screen and (max-width: 375px) {
+      /* Put your mobile-specific styles here */
+      .card {
+        width: 325px;
+      }
+
+      .card_heading {
+      font-size: 22px;
+    }
+
+    .card_p {
+      font-size: 16px;
+    }
+
+      /* Add more styles as needed */
+    }
+
 
   </style>
 </head>
