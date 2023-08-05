@@ -1,3 +1,6 @@
+
+/* ------------- General Styles ------------- */
+
 html {
     font-family: 'Manrope', sans-serif;
     font-size: 62.5%;
@@ -83,6 +86,12 @@ p {
     max-height: 2.4rem;
 }
 
+.light_text{
+    color: #FFFFFF;
+}
+
+/* ------------- Hero Section ------------- */
+
 .hero_section {
     background-color: #24053E;
     padding-bottom: 32.7rem;
@@ -94,10 +103,6 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 5.8rem 16.5rem 5.5rem 16.5rem;
-}
-
-.light_text{
-    color: #FFFFFF;
 }
 
 .marketing_content_wrapper {
@@ -145,6 +150,8 @@ p {
     position: absolute;
     margin-top: -276px;
 }
+
+/* ------------- Features Section ------------- */
 
 .features_section {
     position: relative;
@@ -194,14 +201,7 @@ p {
     right: 72.69px;
 }
 
-.social_media {
-    margin-bottom: 11rem;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-}
+/* ------------- CTA Section ------------- */
 
 .cta_section {
     /* border: 2px solid red; */
@@ -244,4 +244,15 @@ p {
     gap: 32px;
     padding: 6.4rem;
     /* z-index: 1; */
+}
+
+/* ------------- Footer ------------- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.social_media {
+    margin-bottom: 11rem;
 }
