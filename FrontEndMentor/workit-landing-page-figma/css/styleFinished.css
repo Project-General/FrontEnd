@@ -110,7 +110,6 @@ p {
 
 .phone {
     aspect-ratio: 715 / 427;
-    width: 50vw;
     height: auto;
     max-width: 71.5rem;
     max-height: 42.7rem;
@@ -191,50 +190,55 @@ p {
     margin: 56px 0 28px 0;
 }
 
+/* ------------- CTA Section ------------- */
+
+.cta_section {
+    padding: 10rem 10rem;
+    margin: 10rem 0;
+}
+
+.cta_container {
+    display: flex;
+    justify-content: center;
+}
+
+.img_wrapper {
+    display: block;
+    width: clamp(25rem, 30vw, 45rem); /* Adjust the width of img_wrapper based on viewport width */
+    height: clamp(25rem, 30vw, 45rem);
+    background-color: #44FFA1;
+    position: relative;
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(15%, -40%);
+    z-index: -1;
+}
+
+.founder_img {
+    position: relative;
+    max-width: 100%;
+    top: 10px;
+}
+
+.cta_content_wrapper {
+    flex: 1;
+}
+
+.cta_content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 6.4rem;
+    max-width: 73rem;
+    background-color: #24053E;
+    color: #FFFFFF;
+    position: relative;
+}
+
 .cta_ring {
     position: absolute;
     max-width: 173px;
     bottom: -61.74px;
     right: 72.69px;
-}
-
-/* ------------- CTA Section ------------- */
-
-.cta_section {
-    display: flex;
-    justify-content: center;
-    margin: 22rem 0 10rem 0;
-}
-
-.founder_pic_wrapper {
-    width: 500px;
-    height: 500px;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    top: -45%;
-    left: -52%;
-    z-index: -1;
-    clip-path: circle(23.85rem at 50% 50%);
-    background-color: #44FFA1;
-}
-
-.founder_pic {
-    position: relative;
-    top: 4.2rem;
-}
-
-.cta_box {
-    box-sizing: border-box;
-    max-width: 73rem;
-    background-color: #24053E;
-    color:#FFFFFF;
-    position: relative;
-    left: 15%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 6.4rem;
 }
 
 /* ------------- Footer ------------- */
