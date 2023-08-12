@@ -93,6 +93,10 @@ p {
 
 .hero_section {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .hero_section::after {
@@ -108,25 +112,30 @@ p {
     clip-path: ellipse(130% 120% at 50% -20%);
 }
 
+.header_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.8rem 16.5rem 5.5rem 16.5rem;
+}
+
 .phone_wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .phone {
     aspect-ratio: 715 / 427;
     height: auto;
-    max-width: 71.5rem;
-    max-height: 42.7rem;
     position: relative;
     bottom: -10rem;
-}
-
-.header_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5.8rem 16.5rem 5.5rem 16.5rem;
+    max-width: 71.5rem;
+    max-height: 42.7rem;
+    width: 50%;
+    min-width: 51.4rem;
+    height: auto;
 }
 
 .marketing_content_wrapper {
@@ -204,8 +213,7 @@ p {
 
 
 .cta_section {
-    border: 1px solid green;
-    /* margin: 0 5px; */
+    margin: 10rem 0;
 }
 
 .cta_container {
