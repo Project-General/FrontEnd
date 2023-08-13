@@ -49,7 +49,7 @@
 
     .btn_secondary {
         font-size: 1.6rem;
-        line-height: 3.2rem;
+        line-height: 3.1rem;
         letter-spacing: 0.016rem;
     }
 
@@ -58,8 +58,10 @@
     }
 
     .phone {
-        max-width: 47.9rem;
+        width: 80%;
+        max-width: 51.4rem;
         max-height: 28.66rem;
+        min-width: 32rem;
         /* display: none; */
     }
 
@@ -95,6 +97,7 @@
     .rounded {
         width: 4.7rem;
         height: 4.7rem;
+        min-width: 4.7rem;
     }
 
     .space_around {
@@ -112,25 +115,40 @@
 
     .cta_section {
         margin: 1rem;
-        padding: 10rem 4rem;
+        padding: 10rem 1rem;
     }
 
     .cta_container {
         max-width: 68.9rem;
+        position: relative;
+        justify-content: flex-end;
     }
 
     .img_wrapper {
         width: 28.1rem;
-        height: 28.1rem
+        height: 28.1rem;
+        transform: translate(-10%, -70%);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .cta_content_wrapper {
+        transform: translateX(0);
+        top: 0;
+        right: 0;
     }
 
     .cta_content {
         max-width: 51.4rem;
+        min-width: 34.3rem;
         padding: 5.6rem;
     }
 
-    .cta_content_wrapper {
-        flex: 1;
+    .cta_ring {
+        right: 1.269rem;
+        max-width: 17.3rem;
+        max-height: 13.7rem;
     }
 
     .extend {
@@ -138,11 +156,91 @@
         height: 5.5rem;
     }
 
+    /* ------------- Footer ------------- */
 
+    .social_media {
+        margin-bottom: 5rem;
+    }
+}
 
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 5rem;
+    }
 
+    h2 {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
 
-    .footer {
+    .hero_section::after {
+        clip-path: ellipse(200% 120% at 50% -20%);
+    }
+
+    .ring_left_svg {
+        display: none;
+    }
+    
+    .ring_right_svg {
+        display: none;
+    }
+
+    .borderless_card {
+        max-width: 34.3rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 2.4rem;
+    }
+
+    .rounded {
+        margin: 0;
+    }
+
+    .features_section {
+        top: -5rem;
+        clip-path: ellipse(270% 120% at 50% -20%);
+    }
+
+    .cta_section {
+        margin: 0 1rem 5rem 1rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta_container {
+        max-width: 34.3rem;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .img_wrapper {
+        position: relative;
+        transform: translate(0,16%);
+        align-self: unset;
+        max-width: 28.1rem;
+        max-height: 28.1rem;
+        width: unset;
+        height: unset;
+        min-width: unset;
+    }
+
+    .cta_content_wrapper {
+        transform: translateX(0);
+        margin: 0;
+    }
+
+    .cta_content {
+        padding: 3.1rem;
+        max-width: 34.3rem;
+        min-width: unset;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .cta_ring {
         display: none;
     }
 }
