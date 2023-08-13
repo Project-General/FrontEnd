@@ -154,6 +154,7 @@
     .extend {
         width: 17.2rem;
         height: 5.5rem;
+        /* color: black; */
     }
 
     /* ------------- Footer ------------- */
@@ -197,12 +198,12 @@
     }
 
     .features_section {
-        top: -5rem;
+        top: -8rem;
         clip-path: ellipse(270% 120% at 50% -20%);
     }
 
     .cta_section {
-        margin: 0 1rem 5rem 1rem;
+        margin: -5rem 1rem 5rem 1rem;
         padding: 0;
         display: flex;
         justify-content: center;
